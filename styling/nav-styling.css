@@ -38,6 +38,8 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+    text-decoration: none;
+    color: black;
 }
 .union-jack{
     height: 100%;
@@ -61,6 +63,13 @@
     justify-content: center;
     align-items: center;
     background-color: #A9A9A9;
+    text-decoration: none;
+    color: black;
+}
+
+/* the button of the page you are on is disabled, the styling for that */
+.button-disabled{
+    cursor:no-drop;
 }
 
 /* home nav button styling */
