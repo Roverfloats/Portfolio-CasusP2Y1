@@ -1,0 +1,42 @@
+.nav{
+    display: flex;
+    background-color: #D3D3D3;
+    height: 100px;
+    width: 100%;
+}
+
+.bottom-nav{
+    background-color: #D3D3D3;
+    height: 100px;
+    width: 100%;
+}
+
+.col-f1-6{
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.english-page{
+    display: flex;
+    height: 60%;
+    width: 60%;
+    border: 3px solid black;
+    border-radius: 90px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.union-jack{
+    height: 100%;
+    width: 40%;
+    border-radius: 90px;
+}
+
+.english-page-text{
+height: 100%;
+width: 60%;
+}
