@@ -9,6 +9,7 @@
     height: 100%;
     width: auto;
     padding: 20px;
+    margin-left: 20px;
 }
 .col-20{
     display: flex;
@@ -28,8 +29,8 @@
     width: 80%;
 }
 
-/* button to go to the english page */
-.english-page{
+/* button to go to the english or dutch page */
+.language-button{
     display: flex;
     height: 60%;
     width: 80%;
@@ -41,12 +42,12 @@
     text-decoration: none;
     color: black;
 }
-.union-jack{
+.flag{
     height: 100%;
     width: 40%;
     border-radius: 90px;
 }
-.english-page-text{
+.language-button-text{
     display: flex;
     height: 100%;
     width: 60%;
@@ -72,14 +73,9 @@
     cursor:no-drop;
 }
 
-/* home nav button styling */
-
-/* about me nav button styling */
-
-/* work background nav button styling */
-
 /* bottom nav setup */
 .bottom-nav{
+    display: flex;
     background-color: #D3D3D3;
     height: 100px;
     width: 100%;
