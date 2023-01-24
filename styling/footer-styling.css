@@ -1,6 +1,6 @@
 
 .footer{
-    height: 300px;
+    height: min-content;
     width: 100%;
     background-color: #171717;
 }

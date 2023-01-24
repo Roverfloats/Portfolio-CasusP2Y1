@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Tygo Liebers</title>
     <link rel="icon" href="../media/images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../styling/home-styling.css">
     <link rel="stylesheet" href="../styling/footer-styling.css">
@@ -16,23 +17,30 @@
 
 <body>
     <nav class="nav">
-        <div class="col-20">
+        <div class="col-20 col-100">
             <img class="nav-logo" src="../media/images/logo.png" alt="">
+                        
+            <a href="javascript:void(0);" class="pop-up-nav-opener" onclick="myFunction()">
+                <div class="pop-up-nav">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </a>
         </div>
-        <div class="col-80">
+
+        <div class="col-80 deleter">
             <div class="col-25">
-                <a href="../index.html" class="nav-button">Thuis pagina</a>
+                <a href="../index.html" class="nav-button deleter">Thuis pagina</a>
             </div>
 
-            <div class="col-25">
-                <a href="about-me-du.html" class="nav-button">Over mijzelf</a>
+            <div class="col-25 col-50">
+                <a href="about-me-du.html" class="nav-button deleter">Over mijzelf</a>
             </div>
 
-            <div class="col-25">
-                <a href="" class="nav-button button-disabled">Werk geschiedenis</a>
+            <div class="col-25 deleter">
+                <a href="" class="nav-button button-disabled deleter">Werk geschiedenis</a>
             </div>
 
-            <div class="col-25">
+            <div class="col-25 deleter">
                 <a class="language-button" href="home-page-eng.html">
                     <img class="flag" src="../media/images/british-flag-.webp" alt="">
                     <div class="language-button-text">Go to English Page</div>
@@ -41,6 +49,12 @@
         </div>
 
     </nav>
+
+    <div id="pop-up-nav-container">
+        <a href="../index.html" class="pop-up-nav-button">Thuis pagina</a>
+        <a href="about-me-du.html" class="pop-up-nav-button">Over mij</a>
+        <a href="" class="pop-up-nav-button button-disabled">Werk geschiedenis</a>
+    </div>
 
     <header class="header">
         <div class="header-img">
@@ -85,6 +99,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("pop-up-nav-container");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
 
 </body>
 

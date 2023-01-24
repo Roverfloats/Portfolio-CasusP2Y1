@@ -1,82 +1,169 @@
 /* top nav setup */
-.nav{
-    display: flex;
-    background-color: #D3D3D3;
-    height: 100px;
-    width: 100%;
+.nav {
+  display: flex;
+  background-color: #d3d3d3;
+  height: 100px;
+  width: 100%;
 }
-.nav-logo{
-    height: 100%;
-    width: auto;
-    padding: 20px;
-    margin-left: 20px;
+.nav-logo {
+  height: 100%;
+  width: auto;
+  padding: 20px;
+  margin-left: 20px;
 }
-.col-20{
-    display: flex;
-    height: 100%;
-    width: 20%;
+
+.col-100 {
+  display: none;
 }
-.col-25{
-    display: flex;
-    height: 100%;
-    width: 25%;
-    justify-content: center;
-    align-items: center;
+
+.col-20 {
+  display: flex;
+  height: 100%;
+  width: 20%;
 }
-.col-80{
-    display: flex;
-    height: 100%;
-    width: 80%;
+.col-25 {
+  display: flex;
+  height: 100%;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+.col-80 {
+  display: flex;
+  height: 100%;
+  width: 80%;
 }
 
 /* button to go to the english or dutch page */
-.language-button{
-    display: flex;
-    height: 60%;
-    width: 80%;
-    border: 3px solid black;
-    border-radius: 90px;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    text-decoration: none;
-    color: black;
+.language-button {
+  display: flex;
+  height: 60%;
+  width: 80%;
+  border: 3px solid black;
+  border-radius: 90px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-decoration: none;
+  color: black;
 }
-.flag{
-    height: 100%;
-    width: 40%;
-    border-radius: 90px;
+.flag {
+  height: 100%;
+  width: 40%;
+  border-radius: 90px;
 }
-.language-button-text{
-    display: flex;
-    height: 100%;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
+.language-button-text {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
 }
 
 /* overall nav button styling */
-.nav-button{
-    display: flex;
-    height: 60%;
-    width: 80%;
-    border-radius: 90px;
-    justify-content: center;
-    align-items: center;
-    background-color: #A9A9A9;
-    text-decoration: none;
-    color: black;
+.nav-button {
+  display: flex;
+  height: 60%;
+  width: 80%;
+  border-radius: 90px;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9a9a9;
+  text-decoration: none;
+  color: black;
+}
+
+.pop-up-nav-button {
+  display: flex;
+  height: 60px;
+  width: 80%;
+  border-radius: 30px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9a9a9;
+  text-decoration: none;
+  color: black;
 }
 
 /* the button of the page you are on is disabled, the styling for that */
-.button-disabled{
-    cursor:no-drop;
+.button-disabled {
+  cursor: no-drop;
 }
 
 /* bottom nav setup */
-.bottom-nav{
+.bottom-nav {
+  display: flex;
+  background-color: #d3d3d3;
+  height: 100px;
+  width: 100%;
+}
+
+.pop-up-nav {
+  display: none;
+}
+
+.pop-up-nav-container {
+  display: none;
+}
+
+.pop-up-nav-opener {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .col-50-mob {
+    width: 50%;
+  }
+  .language-button {
+    display: none;
+  }
+
+  .deleter {
+    display: none;
+  }
+
+  .nav-button {
+    text-align: center;
+  }
+
+  .nav-logo {
+    margin-left: 0px;
+  }
+
+  .col-100 {
     display: flex;
-    background-color: #D3D3D3;
-    height: 100px;
+    height: 100%;
     width: 100%;
+    justify-content: space-between;
+  }
+
+  .pop-up-nav {
+    display: block;
+    height: min-content;
+    width: min-content;
+    font-size: 30px;
+    color: black;
+  }
+
+  .pop-up-nav-opener {
+    float: right;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    border-radius: 100%;
+    background-color: #a9a9a9;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pop-up-nav-container{
+    display: none;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    background-color: #171717;
+    align-items: center;
+  }
 }
