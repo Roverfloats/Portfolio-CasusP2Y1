@@ -9,12 +9,12 @@
     display: flex;
     height: 700px;
     width: 100%;
-    background-color: cyan;
+    background-color: rgb(255, 255, 255);
 }
 
 .main-text-container{
     height: 100%;
-    width: 50%;
+    width: 70%;
     background-color: white;
     text-align: center;
     padding: 40px;
@@ -22,13 +22,10 @@
 
 .main-image{
     display: flex;
-    height: 100%;
-    width: 50%;
-
-    background: linear-gradient(0.25turn, white, rgba(255, 255, 255, 0));
-    background-image: url('../media/images/2022-10-20.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: max-content;
+    width: 30%;
+    padding: 40px;
+    float: right;
     
 }
 
